@@ -1,0 +1,155 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{08789A88-5C17-43B1-BD8D-CA9898C2D5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Domain", "DataAccess\Exon.Recab.Domain\Exon.Recab.Domain.csproj", "{17AA302A-2972-460D-A95F-00C897626F81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{DB0177B1-2E0F-4EDC-A7A2-C1844B41D0E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Infrastructure", "Business\Exon.Recab.Infrastructure\Exon.Recab.Infrastructure.csproj", "{C6FD4761-26A5-4920-996B-5567E88AACE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Service", "Business\Exon.Recab.Service\Exon.Recab.Service.csproj", "{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebService", "WebService", "{D44566E0-6FB8-40A7-AF9C-5CE001C09D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Api", "WebService\Exon.Recab.Api\Exon.Recab.Api.csproj", "{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.CDN", "WebService\Exon.Recab.CDN\Exon.Recab.CDN.csproj", "{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationServer", "AuthenticationServer", "{F6F0F5FE-A551-44FD-A5D1-9164480F6138}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Authentication.Content", "AuthenticationServer\Exon.Recab.Authentication.Content\Exon.Recab.Authentication.Content.csproj", "{F0063C49-9358-45CA-9205-73C54E0C56B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Payment", "WebService\Exon.Recab.Payment\Exon.Recab.Payment.csproj", "{69C92E1E-E0CC-4D97-A7FA-1C42375C6843}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertData", "ConvertData", "{A1F0062A-6AF8-47A3-99A1-1FEF50A2E9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Convert", "ConvertData\Exon.Recab.Convert\Exon.Recab.Convert.csproj", "{A5CEFD84-759C-4173-B8B0-66D6E0ECC938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.CreatReview", "ConvertData\Exon.Recab.CreatReview\Exon.Recab.CreatReview.csproj", "{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.AddAllTag", "ConvertData\Exon.Recab.AddAllTag\Exon.Recab.AddAllTag.csproj", "{4EC2F0D8-E744-49B0-BF54-8007C30834B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exon.Recab.Convert.Motor", "ConvertData\Exon.Recab.Convert.Motor\Exon.Recab.Convert.Motor.csproj", "{29AB8D85-2D23-4CEC-8C32-6B94A8871858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17AA302A-2972-460D-A95F-00C897626F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AA302A-2972-460D-A95F-00C897626F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AA302A-2972-460D-A95F-00C897626F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AA302A-2972-460D-A95F-00C897626F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FD4761-26A5-4920-996B-5567E88AACE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FD4761-26A5-4920-996B-5567E88AACE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FD4761-26A5-4920-996B-5567E88AACE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FD4761-26A5-4920-996B-5567E88AACE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0063C49-9358-45CA-9205-73C54E0C56B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0063C49-9358-45CA-9205-73C54E0C56B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0063C49-9358-45CA-9205-73C54E0C56B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0063C49-9358-45CA-9205-73C54E0C56B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C92E1E-E0CC-4D97-A7FA-1C42375C6843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C92E1E-E0CC-4D97-A7FA-1C42375C6843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C92E1E-E0CC-4D97-A7FA-1C42375C6843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C92E1E-E0CC-4D97-A7FA-1C42375C6843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5CEFD84-759C-4173-B8B0-66D6E0ECC938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CEFD84-759C-4173-B8B0-66D6E0ECC938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CEFD84-759C-4173-B8B0-66D6E0ECC938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CEFD84-759C-4173-B8B0-66D6E0ECC938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC2F0D8-E744-49B0-BF54-8007C30834B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC2F0D8-E744-49B0-BF54-8007C30834B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC2F0D8-E744-49B0-BF54-8007C30834B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC2F0D8-E744-49B0-BF54-8007C30834B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AB8D85-2D23-4CEC-8C32-6B94A8871858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AB8D85-2D23-4CEC-8C32-6B94A8871858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AB8D85-2D23-4CEC-8C32-6B94A8871858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AB8D85-2D23-4CEC-8C32-6B94A8871858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17AA302A-2972-460D-A95F-00C897626F81} = {08789A88-5C17-43B1-BD8D-CA9898C2D5C5}
+		{C6FD4761-26A5-4920-996B-5567E88AACE7} = {DB0177B1-2E0F-4EDC-A7A2-C1844B41D0E7}
+		{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5} = {DB0177B1-2E0F-4EDC-A7A2-C1844B41D0E7}
+		{2D7CD919-B2CC-4E86-81D8-A345EC9DA1AC} = {D44566E0-6FB8-40A7-AF9C-5CE001C09D63}
+		{264E1B70-6F91-4EB8-AA14-C11DCAD0F7C8} = {D44566E0-6FB8-40A7-AF9C-5CE001C09D63}
+		{F0063C49-9358-45CA-9205-73C54E0C56B3} = {F6F0F5FE-A551-44FD-A5D1-9164480F6138}
+		{69C92E1E-E0CC-4D97-A7FA-1C42375C6843} = {D44566E0-6FB8-40A7-AF9C-5CE001C09D63}
+		{A5CEFD84-759C-4173-B8B0-66D6E0ECC938} = {A1F0062A-6AF8-47A3-99A1-1FEF50A2E9CD}
+		{C9D8CBB5-FA40-4D9D-BC59-1882061BEAE1} = {A1F0062A-6AF8-47A3-99A1-1FEF50A2E9CD}
+		{4EC2F0D8-E744-49B0-BF54-8007C30834B3} = {A1F0062A-6AF8-47A3-99A1-1FEF50A2E9CD}
+		{29AB8D85-2D23-4CEC-8C32-6B94A8871858} = {A1F0062A-6AF8-47A3-99A1-1FEF50A2E9CD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.9:8080/tfs/rekabcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AuthenticationServer\\Exon.Recab.Authentication.Content\\Exon.Recab.Authentication.Content.csproj
+		SccProjectTopLevelParentUniqueName1 = Exon.Recab.sln
+		SccProjectName1 = AuthenticationServer/Exon.Recab.Authentication.Content
+		SccLocalPath1 = AuthenticationServer\\Exon.Recab.Authentication.Content
+		SccProjectUniqueName2 = Business\\Exon.Recab.Infrastructure\\Exon.Recab.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName2 = Exon.Recab.sln
+		SccProjectName2 = Business/Exon.Recab.Infrastructure
+		SccLocalPath2 = Business\\Exon.Recab.Infrastructure
+		SccProjectUniqueName3 = Business\\Exon.Recab.Service\\Exon.Recab.Service.csproj
+		SccProjectTopLevelParentUniqueName3 = Exon.Recab.sln
+		SccProjectName3 = Business/Exon.Recab.Service
+		SccLocalPath3 = Business\\Exon.Recab.Service
+		SccProjectUniqueName4 = ConvertData\\Exon.Recab.AddAllTag\\Exon.Recab.AddAllTag.csproj
+		SccProjectTopLevelParentUniqueName4 = Exon.Recab.sln
+		SccProjectName4 = ConvertData/Exon.Recab.AddAllTag
+		SccLocalPath4 = ConvertData\\Exon.Recab.AddAllTag
+		SccProjectUniqueName5 = ConvertData\\Exon.Recab.Convert\\Exon.Recab.Convert.csproj
+		SccProjectTopLevelParentUniqueName5 = Exon.Recab.sln
+		SccProjectName5 = ConvertData/Exon.Recab.Convert
+		SccLocalPath5 = ConvertData\\Exon.Recab.Convert
+		SccProjectUniqueName6 = ConvertData\\Exon.Recab.CreatReview\\Exon.Recab.CreatReview.csproj
+		SccProjectTopLevelParentUniqueName6 = Exon.Recab.sln
+		SccProjectName6 = ConvertData/Exon.Recab.CreatReview
+		SccLocalPath6 = ConvertData\\Exon.Recab.CreatReview
+		SccProjectUniqueName7 = DataAccess\\Exon.Recab.Domain\\Exon.Recab.Domain.csproj
+		SccProjectTopLevelParentUniqueName7 = Exon.Recab.sln
+		SccProjectName7 = DataAccess/Exon.Recab.Domain
+		SccLocalPath7 = DataAccess\\Exon.Recab.Domain
+		SccProjectUniqueName8 = WebService\\Exon.Recab.Api\\Exon.Recab.Api.csproj
+		SccProjectTopLevelParentUniqueName8 = Exon.Recab.sln
+		SccProjectName8 = WebService/Exon.Recab.Api
+		SccLocalPath8 = WebService\\Exon.Recab.Api
+		SccProjectUniqueName9 = WebService\\Exon.Recab.CDN\\Exon.Recab.CDN.csproj
+		SccProjectTopLevelParentUniqueName9 = Exon.Recab.sln
+		SccProjectName9 = WebService/Exon.Recab.CDN
+		SccLocalPath9 = WebService\\Exon.Recab.CDN
+		SccProjectUniqueName10 = WebService\\Exon.Recab.Payment\\Exon.Recab.Payment.csproj
+		SccProjectTopLevelParentUniqueName10 = Exon.Recab.sln
+		SccProjectName10 = WebService/Exon.Recab.Payment
+		SccLocalPath10 = WebService\\Exon.Recab.Payment
+		SccProjectUniqueName11 = ConvertData\\Exon.Recab.Convert.Motor\\Exon.Recab.Convert.Motor.csproj
+		SccProjectTopLevelParentUniqueName11 = Exon.Recab.sln
+		SccProjectName11 = ConvertData/Exon.Recab.Convert.Motor
+		SccLocalPath11 = ConvertData\\Exon.Recab.Convert.Motor
+	EndGlobalSection
+EndGlobal

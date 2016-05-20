@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17AA302A-2972-460D-A95F-00C897626F81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exon.Recab.Domain</RootNamespace>
+    <AssemblyName>Exon.Recab.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Constant\Email\EmailType.cs" />
+    <Compile Include="Constant\Exception\ExceptionType.cs" />
+    <Compile Include="Constant\Media\EntityType.cs" />
+    <Compile Include="Constant\Media\MediaType.cs" />
+    <Compile Include="Constant\News\NewsSendType.cs" />
+    <Compile Include="Constant\News\NewsType.cs" />
+    <Compile Include="Constant\Prodoct\AlertProductStatus.cs" />
+    <Compile Include="Constant\Prodoct\FeedBackStatus.cs" />
+    <Compile Include="Constant\Prodoct\PriorityStatus.cs" />
+    <Compile Include="Constant\Prodoct\ProdoctStatus.cs" />
+    <Compile Include="Constant\Public\ClientType.cs" />
+    <Compile Include="Constant\Resource\ResourceType.cs" />
+    <Compile Include="Constant\SMS\SMSType.cs" />
+    <Compile Include="Constant\Transaction\BankStatus.cs" />
+    <Compile Include="Constant\Transaction\BankType.cs" />
+    <Compile Include="Constant\User\DealershipStatus.cs" />
+    <Compile Include="Constant\User\RoleStatus.cs" />
+    <Compile Include="Constant\User\TokenType.cs" />
+    <Compile Include="Constant\User\UserCreditStatus.cs" />
+    <Compile Include="Constant\User\UserGender.cs" />
+    <Compile Include="Constant\User\UserStatus.cs" />
+    <Compile Include="Constant\Voucher\VoucherCreationStatus.cs" />
+    <Compile Include="Constant\Voucher\VoucherStatus.cs" />
+    <Compile Include="Entity\AdvertiseModule\CategoryFeatureDefaultValue.cs" />
+    <Compile Include="Entity\AdvertiseModule\FeatureValueDefaultValue.cs" />
+    <Compile Include="Entity\AlertModule\AlertProduct.cs" />
+    <Compile Include="Entity\AndroidElement.cs" />
+    <Compile Include="Entity\BackUpModole\MongoBackUp.cs" />
+    <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\Category.cs" />
+    <Compile Include="Entity\AdvertiseModule\CategoryExchange.cs" />
+    <Compile Include="Entity\CategoryFeature.cs" />
+    <Compile Include="Entity\AdvertiseModule\CategoryFeatureDependency.cs" />
+    <Compile Include="Entity\AdvertiseModule\CategoryLiteSearchResultPattern.cs" />
+    <Compile Include="Entity\City.cs" />
+    <Compile Include="Entity\CMS\Article.cs" />
+    <Compile Include="Entity\CMS\ArticleStructure.cs" />
+    <Compile Include="Entity\CMS\Review.cs" />
+    <Compile Include="Entity\CMS\TodayPriceConfig.cs" />
+    <Compile Include="Entity\CMS\TodayPriceOption.cs" />
+    <Compile Include="Entity\ExceptionModule\ExceptionCode.cs" />
+    <Compile Include="Entity\PaymentModule\Credit.cs" />
+    <Compile Include="Entity\AdvertiseModule\Dealership.cs" />
+    <Compile Include="Entity\AdvertiseModule\DealershipCategory.cs" />
+    <Compile Include="Entity\Element.cs" />
+    <Compile Include="Entity\AdvertiseModule\ExchangeFeatureValue.cs" />
+    <Compile Include="Entity\AdvertiseModule\FavouriteProduct.cs" />
+    <Compile Include="Entity\FeatureValue.cs" />
+    <Compile Include="Entity\FeatureValueAssign.cs" />
+    <Compile Include="Entity\FeatureValueAssignFeatureValueItem.cs" />
+    <Compile Include="Entity\AdvertiseModule\FeatureValueDependency.cs" />
+    <Compile Include="Entity\AdvertiseModule\FeedbackProduct.cs" />
+    <Compile Include="Entity\Media.cs" />
+    <Compile Include="Entity\PackageModule\CategoryPurchasePackageType.cs" />
+    <Compile Include="Entity\PackageModule\CategoryPurchaseType.cs" />
+    <Compile Include="Entity\PackageModule\PackageBaseConfig.cs" />
+    <Compile Include="Entity\PackageModule\PackageBaseConfigValue.cs" />
+    <Compile Include="Entity\PackageModule\PackageType.cs" />
+    <Compile Include="Entity\PackageModule\PurchaseConfig.cs" />
+    <Compile Include="Entity\PackageModule\PurchaseType.cs" />
+    <Compile Include="Entity\PackageModule\UserPackageCredit.cs" />
+    <Compile Include="Entity\PackageModule\Voucher.cs" />
+    <Compile Include="Entity\PackageModule\VoucherConfig.cs" />
+    <Compile Include="Entity\Permission.cs" />
+    <Compile Include="Entity\AdvertiseModule\Product.cs" />
+    <Compile Include="Entity\AdvertiseModule\ProductFeatureValue.cs" />
+    <Compile Include="Entity\AdvertiseModule\ProductFeatureValueFeatureValueItem.cs" />
+    <Compile Include="Entity\RecabSystemConfig.cs" />
+    <Compile Include="Entity\Resource.cs" />
+    <Compile Include="Entity\Role.cs" />
+    <Compile Include="Entity\Sms.cs" />
+    <Compile Include="Entity\State.cs" />
+    <Compile Include="Entity\PaymentModule\Transaction.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Entity\UserRole.cs" />
+    <Compile Include="Entity\UserToken.cs" />
+    <Compile Include="Migrations\201603140640153_init.cs" />
+    <Compile Include="Migrations\201603140640153_init.Designer.cs">
+      <DependentUpon>201603140640153_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603160814060_init1.cs" />
+    <Compile Include="Migrations\201603160814060_init1.Designer.cs">
+      <DependentUpon>201603160814060_init1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603160816569_init2.cs" />
+    <Compile Include="Migrations\201603160816569_init2.Designer.cs">
+      <DependentUpon>201603160816569_init2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603160831050_init3.cs" />
+    <Compile Include="Migrations\201603160831050_init3.Designer.cs">
+      <DependentUpon>201603160831050_init3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603160836097_init4.cs" />
+    <Compile Include="Migrations\201603160836097_init4.Designer.cs">
+      <DependentUpon>201603160836097_init4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603160920561_init5.cs" />
+    <Compile Include="Migrations\201603160920561_init5.Designer.cs">
+      <DependentUpon>201603160920561_init5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604021214388_init6.cs" />
+    <Compile Include="Migrations\201604021214388_init6.Designer.cs">
+      <DependentUpon>201604021214388_init6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604031052283_init7.cs" />
+    <Compile Include="Migrations\201604031052283_init7.Designer.cs">
+      <DependentUpon>201604031052283_init7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604031113076_init8.cs" />
+    <Compile Include="Migrations\201604031113076_init8.Designer.cs">
+      <DependentUpon>201604031113076_init8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604031139423_init9.cs" />
+    <Compile Include="Migrations\201604031139423_init9.Designer.cs">
+      <DependentUpon>201604031139423_init9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604051151498_init10.cs" />
+    <Compile Include="Migrations\201604051151498_init10.Designer.cs">
+      <DependentUpon>201604051151498_init10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604051205019_init11.cs" />
+    <Compile Include="Migrations\201604051205019_init11.Designer.cs">
+      <DependentUpon>201604051205019_init11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604090953054_init12.cs" />
+    <Compile Include="Migrations\201604090953054_init12.Designer.cs">
+      <DependentUpon>201604090953054_init12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604100856434_init13.cs" />
+    <Compile Include="Migrations\201604100856434_init13.Designer.cs">
+      <DependentUpon>201604100856434_init13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604101021597_init14.cs" />
+    <Compile Include="Migrations\201604101021597_init14.Designer.cs">
+      <DependentUpon>201604101021597_init14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604151007590_init15.cs" />
+    <Compile Include="Migrations\201604151007590_init15.Designer.cs">
+      <DependentUpon>201604151007590_init15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MongoDb\MdbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServer\SdbContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageProcessor, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageProcessor.2.3.3.0\lib\net45\ImageProcessor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.2.2\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.2.2\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.2.2\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.0.316.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StackExchange.Redis.1.0.488\lib\net45\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603140640153_init.resx">
+      <DependentUpon>201603140640153_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603160814060_init1.resx">
+      <DependentUpon>201603160814060_init1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603160816569_init2.resx">
+      <DependentUpon>201603160816569_init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603160831050_init3.resx">
+      <DependentUpon>201603160831050_init3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603160836097_init4.resx">
+      <DependentUpon>201603160836097_init4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603160920561_init5.resx">
+      <DependentUpon>201603160920561_init5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604021214388_init6.resx">
+      <DependentUpon>201604021214388_init6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604031052283_init7.resx">
+      <DependentUpon>201604031052283_init7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604031113076_init8.resx">
+      <DependentUpon>201604031113076_init8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604031139423_init9.resx">
+      <DependentUpon>201604031139423_init9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051151498_init10.resx">
+      <DependentUpon>201604051151498_init10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051205019_init11.resx">
+      <DependentUpon>201604051205019_init11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604090953054_init12.resx">
+      <DependentUpon>201604090953054_init12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604100856434_init13.resx">
+      <DependentUpon>201604100856434_init13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604101021597_init14.resx">
+      <DependentUpon>201604101021597_init14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604151007590_init15.resx">
+      <DependentUpon>201604151007590_init15.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.1.1.1\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

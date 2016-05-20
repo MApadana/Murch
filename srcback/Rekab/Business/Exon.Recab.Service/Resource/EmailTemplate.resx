@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdvertiseConfirm" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png"  height="50" style="float:left; display:inline-block;"/&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;تاییدیه آگهی&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}}  عزیز،سلام&lt;/p&gt;
+            &lt;p&gt;آگهی 
+            &lt;a href="{{ADSLink}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;{{Title}}&lt;/a&gt;
+             شما مورد تایید و در وب سایت قرار گرفت.&lt;/p&gt;
+            
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار پس از تأیید آگهی شما فرستاده شده، اگر شما این آگهی را ثبت نکرده‌اید 
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="AdvertiseSave" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;&lt;head&gt;&lt;/head&gt;
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;رسید ثبت آگهی&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}} ، عزیز &lt;/p&gt;
+            &lt;p&gt;آگهی 
+             &lt;a href="{{AdSLink}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;{{ADSTitle}}&lt;/a&gt;
+             ثبت و پس از تایید به وب سایت اضافه می گردد.&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;span&gt;جزییات آگهی شما&lt;/span&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    {{#CFItems}}
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;{{CFTitle}}:&lt;/span&gt;
+                        &lt;span style="color:#135f87; font-family:Arial;"&gt;{{FVTitle}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    {{/CFItems}}
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار پس از ثبت آگهی شما به عنوان رسید به شما فرستاده شده، اگر شما این آگهی را ثبت نکرده‌اید
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="AlertEmail" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;خوش آمدید&lt;/div&gt;
+        &lt;div class="info" style="font-size:13px; background-color:#fafafa; text-align:justify; padding:24px;"&gt;وب سایت رکاب بزرگترین مرجع ثبت و جستجوی آگهی های وسایل نقلیه در ایران است. این وب سایت به شما کمک می‌کند تا وسیله نقلیه خود را بفروشید و یا وسیله نقلیه مورد علاقه خود را بیابید. همچنین شما می توانید از مطالب آموزنده وب سایت رکاب استفاده و با وسایل نقلیه مختلف و همچنین قیمت‌های آنها آشنا شوید.&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}}  عزیز،سلام&lt;/p&gt;
+            &lt;p&gt;سیستم گوش به زنگ دو مورد آگهی متناسب با تنظیمات شما یافت کرد.&lt;/p&gt;
+            &lt;a href="{{AdLink}}"&gt;
+
+                {{#AlertItems}}
+                &lt;div style="display:inline-block; margin:8px; position:relative; border-radius:3px; box-shadow: inset 0 -50px 36px -16px rgba(0,0,0,.5); background-image:url({{Url}}); background-position:center center; background-repeat:no-repeat; background-size:cover; width:200px; height:150px;"&gt;
+                    &lt;div style="position:absolute; right:0; bottom:0; padding:8px; font-size:16px; color:#eee;"&gt;{{Title}}&lt;/div&gt;
+                &lt;/div&gt;
+                {{/AlertItems}}
+
+            &lt;/a&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;span&gt;تنظیمات شما&lt;/span&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    {{#CFItems}}
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;{{CFTitle}}:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{FVTitle}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    {{/CFItems}}
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار و توسط سیستم گوش به زنگ فرستاده شده، در صورت بروز هر گونه مشکل یا سوال
+                &lt;a href="{{AboutUs}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;با ما در ارتباط باشید&lt;/a&gt; و یا برای تغییر تنظیمات گوش به زنگ &lt;a href="{{NotificationLink}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ChangePasswordEmailTemplate" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;title&gt;تغییر کلمه عبور&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="images/Rekab.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="images/farsi.png"  height="50" style="float:left; display:inline-block;"/&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;تغییر کلمه عبور&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}} سلام،&lt;/p&gt;
+            &lt;p&gt;لطفاً برای تغییر کلمه عبور کد امنیتی زیر را در &lt;a href="{{ResetPasswordLink}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; وارد نمایید.&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;کد امنیتی:&lt;/span&gt;
+                        &lt;span style="color:#135f87; font-weight:bold; font-family:Arial;"&gt;{{SecurityCode}}&lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="images/App-Store.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="images/Google-Play.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به درخواست شما مبنی بر فراموشی کلمه عبور و برای تغییر کلمه عبور به شما ارسال شده، اگر این درخواست توسط شما انجام نشده
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="DealershipConfirm" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;تاییدیه نمایشگاه&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}}  عزیز،سلام&lt;/p&gt;
+            &lt;p&gt;نمایشگاه شما به نام 
+            &lt;a href="{{AdPage}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt; {{Title}} &lt;/a&gt;
+             مورد تایید و در لیست نمایشگاه های وب سایت قرار گرفت.&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;img src="{{Image}}" width="80" style="vertical-align: middle; margin-left:8px;" /&gt;
+                &lt;span&gt;{{Title}}&lt;/span&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;تلفن:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Tell}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;دورنما:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Fax}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt; وب سایت:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Url}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;آدرس:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Address}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt; فعالیت:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Job}}&lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار پس از تأیید آگهی شما فرستاده شده، اگر شما این آگهی را ثبت نکرده‌اید 
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="PurchaseDetail" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;رسید خرید بسته&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}} ، عزیز &lt;/p&gt;
+            &lt;p&gt;خرید بسته {{CPPTTitle}} با موفقیت انجام شد.&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;span&gt;جزئیات بسته خریداری شده&lt;/span&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    {{#Configs}}
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;{{Title}}:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Value}}&lt;/span&gt;
+                    &lt;/li&gt;
+                    {{/Configs}}
+                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار پس از خرید بسته آگهی توسط شما فرستاده شده، در صورت بروز هر گونه مشکل یا سوال 
+                &lt;a href="{{AboutUs}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;با ما در ارتباط باشید&lt;/a&gt;.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="SendVerficationCode" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;تغییر کلمه عبور&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+            &lt;p&gt;{{Name}} ، عزیز &lt;/p&gt;
+            &lt;p&gt;لطفاً برای تغییر کلمه عبور کد امنیتی زیر را در وارد نمایید.&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;کد امنیتی:&lt;/span&gt;
+                        &lt;span style="color:#135f87; font-weight:bold; font-family:Arial;"&gt;{{Code}}&lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به درخواست شما مبنی بر فراموشی کلمه عبور و برای تغییر کلمه عبور به شما ارسال شده، اگر این درخواست توسط شما انجام نشده
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="Wellcome" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body dir="rtl"&gt;
+    &lt;div class="header" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;img src="https://i.imgsafe.org/1dba4bc.png" height="50" style="float:right; display:inline-block;" /&gt;
+        &lt;img src="https://i.imgsafe.org/be7e949.png" height="50" style="float:left; display:inline-block;" /&gt;
+    &lt;/div&gt;
+    &lt;div class="container" style="color:rgba(0,0,0,.8); max-width:500px; background-color:#fafafa; border:1px solid rgba(0,0,0,.05); margin:8px auto 0; font-family:'B Yekan',Tahoma,Arial;"&gt;
+        &lt;div class="title" style="height:100px; background-color:#3c9dd0; color:#FFF; line-height:150px; padding:0 24px; font-size:24px;"&gt;خوش آمدید&lt;/div&gt;
+        &lt;div class="info" style="font-size:13px; background-color:#fafafa; text-align:justify; padding:24px;"&gt;وب سایت رکاب بزرگترین مرجع ثبت و جستجوی آگهی های وسایل نقلیه در ایران است. این وب سایت به شما کمک می‌کند تا وسیله نقلیه خود را بفروشید و یا وسیله نقلیه مورد علاقه خود را بیابید. همچنین شما می توانید از مطالب آموزنده وب سایت رکاب استفاده و با وسایل نقلیه مختلف و همچنین قیمت‌های آنها آشنا شوید.&lt;/div&gt;
+        &lt;div class="content" style="font-size:14px; padding:8px 24px;"&gt;
+
+            &lt;p&gt;&lt;/p&gt;
+            &lt;div class="userInfo" style="padding:24px 24px 24px 0;"&gt;
+                &lt;img src="https://i.imgsafe.org/9550b9d.png" width="40" style="vertical-align: middle; margin-left:8px;" /&gt;
+                &lt;span&gt;اطلاعات حساب کاربری شما&lt;/span&gt;
+                &lt;ul style="list-style:none;"&gt;
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;نام:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Name}}&lt;/span&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;شماره تلفن:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Mobile}}&lt;/span&gt;
+                    &lt;/li&gt;
+
+                    &lt;li&gt;
+                        &lt;span style="color:#999;"&gt;ایمیل:&lt;/span&gt;
+                        &lt;span style="color:#135f87;"&gt;{{Email}}&lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;p&gt; برای فعال سازی حساب کاربری &lt;a href="{{Link}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; کلیک کنید.&lt;/p&gt;
+            &lt;div style="text-align:left; height:100px;"&gt;
+                &lt;div style="display:inline-block; text-align:center;"&gt;
+                    &lt;p style="margin:24px 0 0 0; color:#444; display:inline-block;"&gt;با آرزوی موفقیت،&lt;/p&gt;&lt;br /&gt;
+                    &lt;p style="margin:0; color:rgba(0,0,0,.7); display:inline-block;"&gt;مدیریت وب سایت رکاب&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="background-color:#333; padding:16px;"&gt;
+            &lt;div style="text-align:center;"&gt;
+                &lt;a href="{{DownloadIOS}}"&gt;&lt;img src="https://i.imgsafe.org/7123a90.png" width="100" /&gt;&lt;/a&gt;
+                &lt;a href="{{DownloadAndroid}}"&gt;&lt;img src="https://i.imgsafe.org/f879827.png" width="100" /&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p style="color:rgba(0,0,0,.5); font-size:11px; margin-top:8px; border-top:1px solid #fafafa; color:#fafafa; padding-top:8px; margin-bottom:0;"&gt;
+                این ایمیل به صورت خودکار و پس از ثبت نام در وب سایت رکاب به شما فرستاده شده، اگر معتقید که این ایمیل به اشتباه به شما فرستاده شده و شما در سایت عضویت ایجاد نکرده اید
+                &lt;a href="{{WrongEmail}}" style="text-decoration:none;color:#ffa840; border-bottom:1px solid #ffa840;"&gt;اینجا&lt;/a&gt; را کلیک کنید.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="disclaimer" style="max-width:500px; margin:0 auto; height:50px; font-family:'B Yekan',Tahoma,Arial; text-align:center;"&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;کلیه حقوق این وب سایت متعلق به شرکت اکسون ویژن می باشد.&lt;/p&gt;
+        &lt;p style="margin:0; color:rgba(0,0,0,.4); font-size:10px;"&gt;Copyright © 2016 Rekab.ir&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CE9A95A-E67F-44ED-9930-4C1DCB1BE6A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exon.Recab.Service</RootNamespace>
+    <AssemblyName>Exon.Recab.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Bson.2.2.2\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.2.2.2\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.2.2.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MongoDB.Driver.Core.2.2.2\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nustache.Core, Version=1.15.3.7, Culture=neutral, PublicKeyToken=efd6f3d8f76ecd9f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Nustache.1.15.3.7\lib\net20\Nustache.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constant\AlertSearchType.cs" />
+    <Compile Include="Constant\BriefSearchType.cs" />
+    <Compile Include="Constant\FeatureConfigType.cs" />
+    <Compile Include="Constant\MellatPaymentResult.cs" />
+    <Compile Include="Constant\SortType.cs" />
+    <Compile Include="Implement\Admin\AdminAdvertiseService.cs" />
+    <Compile Include="Implement\Admin\AdminCategoryService.cs" />
+    <Compile Include="Implement\Admin\AdminUserService.cs" />
+    <Compile Include="Implement\Advertise\AdvertiseService.cs" />
+    <Compile Include="Implement\Alert\AlertService.cs" />
+    <Compile Include="Implement\ArtTicl\ArticleCategoryService.cs" />
+    <Compile Include="Implement\ArtTicl\ArticleService.cs" />
+    <Compile Include="Implement\Config\BaseConfigService.cs" />
+    <Compile Include="Implement\Email\EmailService.cs" />
+    <Compile Include="Implement\FeedBack\FeedBackService.cs" />
+    <Compile Include="Implement\Helper\ProductHelperService.cs" />
+    <Compile Include="Implement\Helper\PublicService.cs" />
+    <Compile Include="Implement\Jobs\MongoBackUp\MongoBackUpService.cs" />
+    <Compile Include="Implement\Jobs\Product\ProductService.cs" />
+    <Compile Include="Implement\Jobs\Synchronize\SyncService.cs" />
+    <Compile Include="Implement\Jobs\Tag\TagService.cs" />
+    <Compile Include="Implement\News\NewsService.cs" />
+    <Compile Include="Implement\Package\PackageService.cs" />
+    <Compile Include="Implement\Package\VoucherService.cs" />
+    <Compile Include="Implement\Payment\MellatPaymentService.cs" />
+    <Compile Include="Implement\Payment\PaymentService.cs" />
+    <Compile Include="Implement\PolicySystemConfig\UserPolicyService.cs" />
+    <Compile Include="Implement\PolicySystemConfig\ProductPolicyService.cs" />
+    <Compile Include="Implement\PolicySystemConfig\VoucherPolicy.cs" />
+    <Compile Include="Implement\Recommend\RecommendService.cs" />
+    <Compile Include="Implement\ReView\ReviewService.cs" />
+    <Compile Include="Implement\ToDayPrice\TodayPriceService.cs" />
+    <Compile Include="Implement\User\DealershipService.cs" />
+    <Compile Include="Implement\User\RoleManagementService.cs" />
+    <Compile Include="Implement\User\UserService.cs" />
+    <Compile Include="Model\AdminModel\AdminProductViewModel.cs" />
+    <Compile Include="Model\AdminModel\AndroidElementViewModel.cs" />
+    <Compile Include="Model\AdminModel\CategoryFeatureDependencyViewModel.cs" />
+    <Compile Include="Model\AdminModel\CategoryFeatureViewModel.cs" />
+    <Compile Include="Model\AdminModel\CategoryViewModel.cs" />
+    <Compile Include="Model\AdminModel\CityViewModel.cs" />
+    <Compile Include="Model\AdminModel\ExchangeCategoreViewModel.cs" />
+    <Compile Include="Model\AdminModel\FeatureValueDependencyViewModel.cs" />
+    <Compile Include="Model\AdminModel\FeatureValueViewModel.cs" />
+    <Compile Include="Model\AdminModel\FeedBackDetailViewModel.cs" />
+    <Compile Include="Model\AdminModel\GetCategoryFeatureDefaultViewModel.cs" />
+    <Compile Include="Model\AdminModel\HtmlElementViewModel.cs" />
+    <Compile Include="Model\AdminModel\PackageBuyAdminDetail.cs" />
+    <Compile Include="Model\AdminModel\SimpleCategoryViewModel.cs" />
+    <Compile Include="Model\AdminModel\StateViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleCategorySimpleViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleStructureTreeViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleStructureViewModel.cs" />
+    <Compile Include="Model\ArticleModel\EditArticleStructureViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ResultSearchArticleViewModel.cs" />
+    <Compile Include="Model\AsyncServerModel\BaseRequestModel.cs" />
+    <Compile Include="Model\AsyncServerModel\EmailRequestModel.cs" />
+    <Compile Include="Model\AsyncServerModel\SmsRequestModel.cs" />
+    <Compile Include="Model\ConfigModel\AndroidCFConfigViewModel.cs" />
+    <Compile Include="Model\ConfigModel\BaseValuesModel.cs" />
+    <Compile Include="Model\ConfigModel\CategoryFeatureFilterModel.cs" />
+    <Compile Include="Model\ConfigModel\CategoryFeatureValuesResultModel.cs" />
+    <Compile Include="Model\ConfigModel\CFDefaultValueViewModel.cs" />
+    <Compile Include="Model\ConfigModel\DealershipViewModel.cs" />
+    <Compile Include="Model\ConfigModel\ExchangeCategoryViewModel.cs" />
+    <Compile Include="Model\ConfigModel\ExchangeProductselectedItemViewModel.cs" />
+    <Compile Include="Model\ConfigModel\FilterSelectTempModel.cs" />
+    <Compile Include="Model\ConfigModel\InitEditAdvertiseViewModel.cs" />
+    <Compile Include="Model\ConfigModel\InitProductExchangeViewModel.cs" />
+    <Compile Include="Model\ConfigModel\InitSearchViewModel.cs" />
+    <Compile Include="Model\ConfigModel\ProductMediaEditViewModel.cs" />
+    <Compile Include="Model\ConfigModel\ProductselectedItemViewModel.cs" />
+    <Compile Include="Model\ConfigModel\WebCFConfigViewModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\AlertItemEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\PurchaseConfigItemEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendAdsInfoCategoryFeatureEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendAdsInfoEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendAlertEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendApprovedDealershipEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendConfirmAdsEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendPurchaseDetailEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendVerificationEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SendEmailModel\SendWellcomeEmailModel.cs" />
+    <Compile Include="Model\EmailModel\SimpleEmailModel.cs" />
+    <Compile Include="Model\FeadBackModel\FeedBackCfModel.cs" />
+    <Compile Include="Model\PackageModel\CategoryPurchasePackageTypeViewModel.cs" />
+    <Compile Include="Model\PackageModel\CategoryPurchaseTypeViewModel.cs" />
+    <Compile Include="Model\PackageModel\CategoryPurchaseViewModel.cs" />
+    <Compile Include="Model\PackageModel\CPPTDetailInitConfigViewModel.cs" />
+    <Compile Include="Model\PackageModel\CpptEditConfigItemModel.cs" />
+    <Compile Include="Model\PackageModel\CreditValidateVoucherViewModel.cs" />
+    <Compile Include="Model\PackageModel\PackageConfigItemViewModel.cs" />
+    <Compile Include="Model\PackageModel\PackageInitConfigItemViewModel.cs" />
+    <Compile Include="Model\PackageModel\PackageTypeViewModel.cs" />
+    <Compile Include="Model\PackageModel\CPPTDetailConfigViewModel.cs" />
+    <Compile Include="Model\PackageModel\PurchaseTypeViewModel.cs" />
+    <Compile Include="Model\PackageModel\PurchaseTypeWithDetailViewModel.cs" />
+    <Compile Include="Model\PackageModel\ValidateVoucherViewModel.cs" />
+    <Compile Include="Model\PackageModel\VoucherConfigViewModel.cs" />
+    <Compile Include="Model\PackageModel\VoucherViewModel.cs" />
+    <Compile Include="Model\PackageModel\VoucherWithVoucherConfigViewModel.cs" />
+    <Compile Include="Model\PaymentModel\CreditDetailItemViewModel.cs" />
+    <Compile Include="Model\PaymentModel\GatewayInitializeModel.cs" />
+    <Compile Include="Model\PaymentModel\UserCreditDetailViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\AdvertiseLocationSerarchViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\AggregateResultModel.cs" />
+    <Compile Include="Model\ProdoctModel\AlertModel\AlertProcuctSearchDetailModel.cs" />
+    <Compile Include="Model\ProdoctModel\AlertModel\AlertProductCategoryFeatureDetailViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\AlertModel\AlertSingleViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\AlertModel\InitEditArticleViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\CFAggregateModel.cs" />
+    <Compile Include="Model\ProdoctModel\CFAggregateViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\CFProdoctFilterModel.cs" />
+    <Compile Include="Model\ProdoctModel\FeatuerValueAggModel.cs" />
+    <Compile Include="Model\ProdoctModel\FeatuerValueAggregateViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\FilterAndCategoryFeatureModel.cs" />
+    <Compile Include="Model\ProdoctModel\MediaUrlViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProcuctDealershipDetailModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProcuctSearchDetailModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProductCategoryFeatureDetailViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProductCategoryFeatureViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProductFeatureValueDetailViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProductFeatureValueViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\ProductSelectItemModel.cs" />
+    <Compile Include="Model\ProdoctModel\SearchResultItemViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\SearchWithAggregateResultModel.cs" />
+    <Compile Include="Model\ProdoctModel\SelectedFeatureValue.cs" />
+    <Compile Include="Model\ProdoctModel\SelectedItemFilterModel.cs" />
+    <Compile Include="Model\ProdoctModel\TodayPriceSearchFilterViewModel.cs" />
+    <Compile Include="Model\ProdoctModel\UserProductViewModel.cs" />
+    <Compile Include="Model\ArticleModel\AdminArticleViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleCategoryFeature.cs" />
+    <Compile Include="Model\ArticleModel\ArticleCategoryFeatureEditViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleCategoryFeatureViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleFeatureValueEditViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleFilterModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleFilterModelWithCategory.cs" />
+    <Compile Include="Model\ArticleModel\ArticleSearchResultItemViewModel.cs" />
+    <Compile Include="Model\ArticleModel\ArticleViewModel.cs" />
+    <Compile Include="Model\PublicModel\FVResultViewModel.cs" />
+    <Compile Include="Model\PublicModel\CFResultViewModel.cs" />
+    <Compile Include="Model\PublicModel\SelectItemModel.cs" />
+    <Compile Include="Model\Recommend\BriefSearchItemViewModel.cs" />
+    <Compile Include="Model\Recommend\BriefSearchViewModel.cs" />
+    <Compile Include="Model\Recommend\ReletiveCategoryFeature.cs" />
+    <Compile Include="Model\Recommend\TagAggregateModel.cs" />
+    <Compile Include="Model\ReviewModel\AdminReviewViewModel.cs" />
+    <Compile Include="Model\ReviewModel\RateResultViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewCategoryFeature.cs" />
+    <Compile Include="Model\ReviewModel\ReviewCategoryFeatureEditViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewCategoryFeatureViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewFeatureValueEditViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewFeatureValueViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewFilterModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewFilterModelWithCategory.cs" />
+    <Compile Include="Model\ReviewModel\ReviewGroupByViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewLogoItemViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewSearchResultItemViewModel.cs" />
+    <Compile Include="Model\ReviewModel\ReviewViewModel.cs" />
+    <Compile Include="Model\ReviewModel\SelectItemFilterSearchModel.cs" />
+    <Compile Include="Model\SMSModel\SimpleSMSModel.cs" />
+    <Compile Include="Model\TodayPriceModel\AdminTodayPriceViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\HistoryDetailViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceCategoryFeature.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceCategoryFeatureEditViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceFeatureValueEditViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceFilterModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceFilterModelWithCategory.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceSearchResultItemViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceCategoryGroupByViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceChartModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceGroupByResultItemViewModel.cs" />
+    <Compile Include="Model\TodayPriceModel\TodayPriceOptionViewModel.cs" />
+    <Compile Include="Model\UserModel\DealearshipCategoryDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\DealershipDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\DealershipEditViewModel.cs" />
+    <Compile Include="Model\UserModel\DelershipAdminViewModel.cs" />
+    <Compile Include="Model\UserModel\DelershipSearchViewModel.cs" />
+    <Compile Include="Model\UserModel\DelershipViewModel.cs" />
+    <Compile Include="Model\UserModel\MobileLogInModel.cs" />
+    <Compile Include="Model\UserModel\PackageConfigDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\PackageDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\PermissionDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\UserDetailModel.cs" />
+    <Compile Include="Model\UserModel\UserResourceViewModel.cs" />
+    <Compile Include="Model\UserModel\ResourceViewModel.cs" />
+    <Compile Include="Model\UserModel\RoleDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\UserDetailAdminViewModel.cs" />
+    <Compile Include="Model\UserModel\UserDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\UserPakageViewModel.cs" />
+    <Compile Include="Model\UserModel\UserProcuctDetailModel.cs" />
+    <Compile Include="Model\UserModel\UserProductCFDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\UserProductFVDetailViewModel.cs" />
+    <Compile Include="Model\UserModel\VerifyEmailCodeViewModel.cs" />
+    <Compile Include="Model\UserModel\VerifyMobileCodeViewModel.cs" />
+    <Compile Include="Model\UserModel\WebLoginModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\EmailTemplate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailTemplate.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\PackageConfig.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackageConfig.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\PolicyConfig.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PolicyConfig.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ir.shaparak.bpm\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\EmailTemplate.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmailTemplate.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\PackageConfig.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PackageConfig.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\PolicyConfig.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PolicyConfig.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ir.shaparak.bpm\IPaymentGateway.wsdl" />
+    <None Include="Web References\ir.shaparak.bpm\PaymentGatewayImplService.wsdl" />
+    <None Include="Web References\ir.shaparak.bpm\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\Exon.Recab.Domain\Exon.Recab.Domain.csproj">
+      <Project>{17aa302a-2972-460d-a95f-00c897626f81}</Project>
+      <Name>Exon.Recab.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exon.Recab.Infrastructure\Exon.Recab.Infrastructure.csproj">
+      <Project>{c6fd4761-26a5-4920-996b-5567e88aace7}</Project>
+      <Name>Exon.Recab.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://bpm.shaparak.ir/pgwchannel/services/pgw%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ir.shaparak.bpm\</RelPath>
+      <UpdateFromURL>https://bpm.shaparak.ir/pgwchannel/services/pgw%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Exon_Recab_Service_ir_shaparak_bpm_PaymentGatewayImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
